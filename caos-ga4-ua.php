@@ -14,7 +14,7 @@ defined('ABSPATH') || exit;
 
 function add_ga4_tracking_id()
 {
-    $tracking_id = 'G-XXXXXXX'; // Enter your GA4 tracking ID here.
+    $tracking_id = __('G-XXXXXXX', 'host-analyticsjs-local'); // Enter your GA4 tracking ID here.
 ?>
     gtag('config', '<?= $tracking_id; ?>');
 <?php
